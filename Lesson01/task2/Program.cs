@@ -12,15 +12,15 @@ int max = a;
 int min = b;
 if (a > b)
 {
-Console.Write("max=");
-Console.WriteLine (a);
-Console.Write("min=");
-Console.Write (b);
+    Console.Write("max=");
+    Console.WriteLine (a);
+    Console.Write("min=");
+    Console.Write (b);
 } 
 else
 {
-Console.Write("max=");
-Console.WriteLine (b);
-Console.Write("min="); 
-Console.Write (a);   
+    Console.Write("max=");
+    Console.WriteLine (b);
+    Console.Write("min="); 
+    Console.Write (a);   
 }

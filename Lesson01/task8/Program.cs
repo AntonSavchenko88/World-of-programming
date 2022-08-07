@@ -9,7 +9,7 @@ while (b<a)
     if (b % 2==0)
     {
      Console.WriteLine (b);
-  b = b+1;
+     b=b+1;
     }
     else
     {
