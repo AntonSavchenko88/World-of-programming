@@ -4,23 +4,23 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
-int a = new Random().Next(-10,20);
+int a = new Random().Next(-10, 20);
 Console.WriteLine(a);
-int b = new Random().Next(-10,20);
+int b = new Random().Next(-10, 20);
 Console.WriteLine(b);
 int max = a;
 int min = b;
 if (a > b)
 {
     Console.Write("max=");
-    Console.WriteLine (a);
+    Console.WriteLine(a);
     Console.Write("min=");
-    Console.Write (b);
-} 
+    Console.Write(b);
+}
 else
 {
     Console.Write("max=");
-    Console.WriteLine (b);
-    Console.Write("min="); 
-    Console.Write (a);   
+    Console.WriteLine(b);
+    Console.Write("min=");
+    Console.Write(a);
 }
