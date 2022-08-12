@@ -7,4 +7,17 @@
 32679 -> 6 */
 
 
+Console.WriteLine ("Введите число - ");
+int a= int.Parse(Console.ReadLine());
+string str = a.ToString();
+char [] ar = str.ToCharArray();
+if (ar.Length>=3)
+{
+    Console.WriteLine (ar[2]);
+    }
+else
+{
+    Console.WriteLine ("Третьей цифры нет!");
+}
+
 
