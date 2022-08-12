@@ -6,7 +6,7 @@
 
 Console.WriteLine("Введите цифру дня недели - ");
 int day= int.Parse (Console.ReadLine());
-if (day>7)
+if (day>7 || day<=0)
 {
     Console.WriteLine("Ошибка, в неделе всего 7 дней!");
 }
