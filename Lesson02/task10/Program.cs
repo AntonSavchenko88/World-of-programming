@@ -8,9 +8,11 @@
 Console.WriteLine ("Введите число - ");
 int a= int.Parse(Console.ReadLine());
 if (a<1000 && a>100)
-    {string str = a.ToString();
+    {
+        string str = a.ToString();
     char [] ar = str.ToCharArray();
-    Console.WriteLine (ar[1]);}
+    Console.WriteLine (ar[1]);
+    }
 else 
 {
     Console.WriteLine ("Введено неправильное число!");
