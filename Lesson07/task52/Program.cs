@@ -31,7 +31,7 @@ void Print(int[,] array)
     {
         for (int column = 0; column < columns; column++)
         {
-            Console.Write($"{array[row, column],5}");
+            Console.Write($"{array[row, column],10}");
         }
         Console.WriteLine();
     }
@@ -49,13 +49,13 @@ int Massive()
     int[,] matrix = CreateArray(m, n);
     FillArray(matrix);
     Print(matrix);
-    for (int i = 0; i < matrix.GetLength(0)-1; i++)
+    int sum = matrix[0, 0];
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int j=0;
-        int sum=matrix[i,j]+matrix[i+1,j];
-        Console.WriteLine("Сумма="+sum);
+        int j = 0;
+        sum = sum + matrix[i+1, j];
     }
-    
+    Console.Write("Сумма=" + sum);
     return matrix[m, n];
 }
 Massive();
