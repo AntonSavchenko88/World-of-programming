@@ -47,6 +47,7 @@ void PrintArray(int[,,] array3D)
             }
             Console.WriteLine();
         }
+
     }
 }
 FillArray(array3D);

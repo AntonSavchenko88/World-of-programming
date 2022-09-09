@@ -42,29 +42,28 @@ int Input(string text)
     int number = int.Parse(Console.ReadLine());
     return number;
 }
-int Massive()
+int [,] Massive()
 {
     int m = Input("Введите количество строк массива:");
     int n = Input("ВВедите количество столбцов массива:");
     int[,] matrix = CreateArray(m, n);
     FillArray(matrix);
     Print(matrix);
-    int pos1 = Input("Введите позицию по строке: ");
-    int pos2 = Input("Введите позицию по столбцу: ");
-    if (pos1 < 0 | pos1 > matrix.GetLength(0) | pos2 < 0 | pos2 > matrix.GetLength(1))
-    {
-        Console.WriteLine("Элемент не существует");
-    }
-    else
-    {
-        Console.WriteLine("Значение элемента массива = {0}", matrix[pos1-1, pos2-1]);
-    }
-    return matrix[m, n];
+    //int pos1 = Input("Введите позицию по строке: ");
+    //int pos2 = Input("Введите позицию по столбцу: ");
+    //if (pos1 < 0 | pos1 > matrix.GetLength(0) | pos2 < 0 | pos2 > matrix.GetLength(1))
+    //{
+    //    Console.WriteLine("Элемент не существует");
+    //}
+    //else
+    //{
+    //    Console.WriteLine("Значение элемента массива = {0}", matrix[pos1, pos2]);
+    //}
+    return matrix;
 }
-/*void Challenge()
+void Challenge()
 {
-    int[,] array = { };
-    Massive();
+    int[,] array = Massive();
     int pos1 = Input("Введите позицию по строке: ");
     int pos2 = Input("Введите позицию по столбцу: ");
     if (pos1 < 0 | pos1 > array.GetLength(0) - 1 | pos2 < 0 | pos2 > array.GetLength(1) - 1)
@@ -75,11 +74,10 @@ int Massive()
     {
         Console.WriteLine("Значение элемента массива = {0}", array[pos1, pos2]);
     }
-    Console.ReadLine();
     return;
 }
-Challenge();*/
-Massive();
+Challenge();
+
 
 
 
