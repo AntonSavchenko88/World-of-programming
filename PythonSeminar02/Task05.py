@@ -3,10 +3,10 @@
 #-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 #-> [0, 7, 6, 3, 4, 2, 9, 5, 1, 8]
 import random
-list = list(range(1, 11))
+list = list(range(10))
 listmixing = []
 print(f'Исходный список: {list}')
-for i in range(1, 11):
+for i in range(10):
     rnd = random.choice(list)
     listmixing += [rnd]
     list.remove(rnd)
