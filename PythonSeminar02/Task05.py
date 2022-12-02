@@ -1,13 +1,6 @@
-# ** Реализуйте алгоритм перемешивания списка. Без функции shuffle из модуля random.
-#10
-#-> [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-#-> [0, 7, 6, 3, 4, 2, 9, 5, 1, 8]
+# Реализуйте алгоритм перемешивания списка. 
 import random
-list = list(range(10))
-listmixing = []
-print(f'Исходный список: {list}')
-for i in range(10):
-    rnd = random.choice(list)
-    listmixing += [rnd]
-    list.remove(rnd)
-print(f'Перемешанный список:{listmixing}')
+lst = [random.randint(0,10) for i in range(random.randint(5,20))]
+print(f"исходный список:\n {lst}")
+random.shuffle(lst)
+print(f"список после перемешивания:\n{lst}")
