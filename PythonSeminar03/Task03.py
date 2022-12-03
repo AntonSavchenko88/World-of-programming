@@ -3,3 +3,16 @@
 # Пример:
 
 # - [1.1, 1.2, 3.1, 10.01] => 0.19
+import random
+list_size = int(input("Введите размерность списка который хотите создать - "))
+list = []
+newlist = []
+for i in range(list_size):
+    f = random.uniform(0, 9)
+    list.append(round(f, 2))
+print(list)
+maxi = max(list)
+mini= min(list)
+print(f"Макимальное значение списка = {maxi}\nМинимальное значение списка = {mini}")
+dif =(maxi - int(maxi)) - (mini - int(mini))
+print("Разница между максимальным и минимальным значением дробной части элементов = ",round(dif,2))
