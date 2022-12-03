@@ -7,7 +7,7 @@
 # Вывод: 0
 number_elements = int(input("Введите количество элементов в списке: "))
 first_element = -number_elements
-a,b,c = map(int,input("Введите позиции любых 3-х элементов: ").split())
+a,b,c = map(int,input("Введите позиции любых 3-х элементов: ").split())           
 list = []
 for i in range(number_elements * 2 + 1):
     list += [first_element]
